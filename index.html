@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function atualizalink(){
+				document.getElementById('link').href = 'http://api.whatsapp.com/send?1=pt_BR&phone=' + document.getElementById('fone').value;
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Enviar mensagem para telefone não cadastrado.</h1>
+		<input id="fone" type="text" onkeyup="atualizalink()" value="55"/>
+		<a id="link" href="http://api.whatsapp.com/send?1=pt_BR&amp;phone=55" target="_blank">Iniciar conversa</a>
+	</body>
+</html>
